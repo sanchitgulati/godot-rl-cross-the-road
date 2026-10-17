@@ -1,0 +1,34 @@
+# Godot 4 specific ignores
+.godot/
+.mono/
+*.translation
+android/
+export_presets.cfg
+
+# Build & binaries
+bin/
+build/
+*.exe
+*.x86_64
+*.app
+
+# Visual Studio / Rider / C# .NET
+.vs/
+*.csproj.old
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+
+# Python & RL Training
+__pycache__/
+*.py[cod]
+*$py.class
+*.zip
+logs/
+checkpoints/
+*.onnx.data
+
+# Captures & Media raw frames
+captures/
+.temp/
