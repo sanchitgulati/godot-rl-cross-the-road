@@ -32,3 +32,12 @@ checkpoints/
 # Captures & Media raw frames
 captures/
 .temp/
+
+# Local credentials and Python environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+*.pem
+*.key
