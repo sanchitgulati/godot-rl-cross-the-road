@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://dn2auvcty4aoe"]
 
-[ext_resource type="PackedScene" uid="uid://bsuw6dqwq2e3v" path="res://scenes/robot.tscn" id="1_2k47m"]
-[ext_resource type="PackedScene" uid="uid://crui8soua8lj2" path="res://scenes/tile.tscn" id="2_ltmsi"]
+[ext_resource type="PackedScene" path="res://scenes/robot.tscn" id="1_2k47m"]
+[ext_resource type="PackedScene" path="res://scenes/tile.tscn" id="2_ltmsi"]
 [ext_resource type="Script" path="res://scripts/car_manager.gd" id="4_jfcfq"]
 [ext_resource type="Script" path="res://scripts/grid_map.gd" id="4_lrlqi"]
-[ext_resource type="PackedScene" uid="uid://bhk60xl5s8pmm" path="res://scenes/car.tscn" id="4_nsbp8"]
+[ext_resource type="PackedScene" path="res://scenes/car.tscn" id="4_nsbp8"]
 
 [node name="GameScene" type="Node3D"]
 
