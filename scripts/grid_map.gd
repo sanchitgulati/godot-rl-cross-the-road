@@ -53,13 +53,14 @@ func _ready():
 func set_cells():
 	remove_all_tiles()
 	
-	add_row(Tile.TileNames.orange, Tile.TileNames.goal, 1)
-	add_row(Tile.TileNames.orange)
-	add_row(Tile.TileNames.orange, Tile.TileNames.tree, 2)
-	add_row(Tile.TileNames.road)
-	add_row(Tile.TileNames.orange, Tile.TileNames.tree, 2)
-	add_row(Tile.TileNames.orange)
-	add_row(Tile.TileNames.orange)
+	add_row(Tile.TileNames.orange, Tile.TileNames.goal, 1) # Row 0: Goal
+	add_row(Tile.TileNames.orange)                        # Row 1: Buffer Sidewalk
+	add_row(Tile.TileNames.road)                          # Row 2: Lane 1 (traffic ->)
+	add_row(Tile.TileNames.road)                          # Row 3: Lane 2 (opposing traffic <-)
+	add_row(Tile.TileNames.road)                          # Row 4: Lane 3 (traffic ->)
+	add_row(Tile.TileNames.orange, Tile.TileNames.tree, 2)# Row 5: Median with Trees
+	add_row(Tile.TileNames.orange)                        # Row 6: Buffer Sidewalk
+	add_row(Tile.TileNames.orange)                        # Row 7: Player Spawn Line
 	
 	set_player_position_to_last_row()
 
