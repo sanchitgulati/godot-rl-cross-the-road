@@ -68,15 +68,15 @@ The agent is powered by a high-efficiency **Multi-Layer Perceptron (MLP)** Actor
 ### Observation & Action Spaces
 
 * **Observation Space (78 floats)**:
-  * 3 spatial rows (2 in front of player, 1 current row) $\times$ 13 columns (6 left, current, 6 right) = **39 grid tiles**.
+  * 3 spatial rows (2 in front of player, 1 current row) × 13 columns (6 left, current, 6 right) = **39 grid tiles**.
   * Each tile provides **2 features**: `[traffic_direction, tile_or_car_type]`.
-  * $39 \times 2 = \mathbf{78\text{ inputs}}$.
+  * 39 \times 2 = \mathbf{78\text{ inputs}}.
 * **Action Space (Discrete 5)**:
-  * `0`: Move Left ($\\leftarrow$)
-  * `1`: Move Right ($\\rightarrow$)
-  * `2`: Move Forward ($\\uparrow$)
-  * `3`: Move Backward ($\\downarrow$)
-  * `4`: Stay Still / Idle ($\\odot$)
+  * `0`: Move Left (\\leftarrow)
+  * `1`: Move Right (\\rightarrow)
+  * `2`: Move Forward (\\uparrow)
+  * `3`: Move Backward (\\downarrow)
+  * `4`: Stay Still / Idle (\\odot)
 
 ---
 
@@ -151,7 +151,7 @@ onnx.save(m, "model.onnx", save_as_external_data=False)
 
 ### 2. Potential-Based Distance Shaping
 To avoid the sparse reward problem (wandering without finding the goal), the agent is rewarded with:
-$$\\Delta R = \frac{d_{\\text{previous}} - d_{\\text{current}}}{10.0}$$
+\\Delta R = \frac{d_{\\text{previous}} - d_{\\text{current}}}{10.0}
 tracking the monotonic best distance to the goal line to eliminate oscillation exploits.
 
 ---

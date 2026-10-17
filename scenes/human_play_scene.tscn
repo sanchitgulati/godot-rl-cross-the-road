@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dkllmobkdctow"]
 
-[ext_resource type="PackedScene" path="res://scenes/game_scene.tscn" id="1_0y8h2"]
-[ext_resource type="Script" path="res://addons/godot_rl_agents/sync.gd" id="2_5kbv3"]
+[ext_resource type="PackedScene" uid="uid://dn2auvcty4aoe" path="res://scenes/game_scene.tscn" id="1_0y8h2"]
+[ext_resource type="Script" uid="uid://b8ml6824v3xl" path="res://addons/godot_rl_agents/sync.gd" id="2_5kbv3"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_bdk3k"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -16,18 +16,18 @@ sky = SubResource("Sky_uw47m")
 tonemap_mode = 2
 glow_enabled = true
 
-[node name="HumanPlayScene" type="Node3D"]
+[node name="HumanPlayScene" type="Node3D" unique_id=1543301102]
 
-[node name="GameScene" parent="." instance=ExtResource("1_0y8h2")]
+[node name="GameScene" parent="." unique_id=22617595 instance=ExtResource("1_0y8h2")]
 
-[node name="Sync" type="Node" parent="."]
+[node name="Sync" type="Node" parent="." unique_id=886039882]
 script = ExtResource("2_5kbv3")
 control_mode = 0
-speed_up = 0.3
+speed_up = 0.05
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1746409381]
 environment = SubResource("Environment_iamhl")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=955524275]
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
 shadow_enabled = true
