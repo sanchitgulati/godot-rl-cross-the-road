@@ -111,7 +111,7 @@ We recommend Python 3.10 to 3.12:
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/godot-rl-cross-the-road.git
+git clone https://github.com/sanchitgulati/godot-rl-cross-the-road.git
 cd godot-rl-cross-the-road
 
 # Create virtual environment
