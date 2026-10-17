@@ -80,13 +80,23 @@ The agent is powered by a high-efficiency **Multi-Layer Perceptron (MLP)** Actor
 
 ---
 
-## 🚀 Quickstart: Running the Pretrained Model in Godot
+## Quickstart: Running in Godot
 
-You can run the trained model immediately without installing Python or PyTorch:
-
+### 1. Watch Autonomous AI Inference
 1. Open this repository folder in **Godot 4.2+ (with .NET / C# support)**.
-2. Press **Play (F5)** (the default scene is set to `res://scenes/onnx_inference_scene.tscn`).
-3. The robot will autonomously navigate through traffic and reach the goal repeatedly using the bundled `model.onnx`!
+2. Press **Play (F5)** (default scene: `res://scenes/onnx_inference_scene.tscn`).
+3. The robot autonomously navigates through 3 traffic lanes and reaches the goal using `model.onnx`!
+
+### 2. Play Manually as Human
+Test your own reflexes and play the benchmark directly as a human:
+1. In Godot FileSystem dock, open **`scenes/human_play_scene.tscn`**.
+2. Press **Play Current Scene (F6)**.
+3. Controls:
+   * **Forward / Up**: `W` or `Up Arrow`
+   * **Backward / Down**: `S` or `Down Arrow`
+   * **Left**: `A` or `Left Arrow`
+   * **Right**: `D` or `Right Arrow`
+4. Or from command line: `..\bin\run_godot.bat res://scenes/human_play_scene.tscn`
 
 ---
 
